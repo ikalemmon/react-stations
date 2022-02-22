@@ -9,14 +9,15 @@ import './App.css'
  *
  * @type {React.FC}
  */
-function Dog(){
-  const [DogURL, setDogURL] = React.useState(
-    "https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg"
-  )
-}
 
 
 export const App = () => {
+  function Dog(){
+    const [DogURL, setDogURL] = React.useState(
+      "https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg"
+    )
+  }
+
   return (
     <div className="App">
       <header>初めてのReact</header>
