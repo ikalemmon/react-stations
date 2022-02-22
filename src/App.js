@@ -13,7 +13,7 @@ import './App.css'
 
 export const App = () => {
   function Dog(){
-    const [DogURL, setDogURL] = React.useState(
+    const [DogUrl, setDogUrl] = React.useState(
       "https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg"
     )
   }
@@ -21,7 +21,7 @@ export const App = () => {
   return (
     <div className="App">
       <header>初めてのReact</header>
-      <img src={DogURL}></img>
+      <img src={DogUrl}></img>
       <div>
         <h2>犬の画像を表示していくよ</h2>
       </div>
