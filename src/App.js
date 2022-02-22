@@ -23,7 +23,7 @@ export const App = () => {
       <header>初めてのReact</header>
       <img src={DogURL}></img>
       <div>
-        <h2>犬の画像を表示していくよ！！</h2>
+        <h2>犬の画像を表示していくよ</h2>
       </div>
     </div>
   )
