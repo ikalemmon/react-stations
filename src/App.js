@@ -16,6 +16,20 @@ export const App = () => {
       "https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg"
     )
     
+    const updateImage = () => {
+      fetch("https://dog.ceo/api/breeds/image/random")
+        .then(res => res.json())
+        .then(
+          (result) => {
+            setDogUrl(result.message);
+          },
+          (error) => {
+            console.log(error)
+          }
+        );
+    }
+
+
   return (
     <div className="App">
       <header>初めてのReact</header>
@@ -23,7 +37,7 @@ export const App = () => {
       <div>
         <h2>犬の画像を表示していくよ</h2>
       </div>
-      <button onClick={() => setDogUrl("https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg")}>更新ボタン</button>
+      <button onClick={updateImage}>更新ボタン</button>
     </div>
   )
 }
