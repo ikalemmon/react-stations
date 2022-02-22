@@ -32,7 +32,7 @@ export const App = () => {
 
   return (
     <div className="App">
-      <header>初めてのReact</header>
+      <header class="header">初めてのReact</header>
       <img src={dogUrl}></img>
       <div>
         <h2>犬の画像を表示していくよ</h2>
